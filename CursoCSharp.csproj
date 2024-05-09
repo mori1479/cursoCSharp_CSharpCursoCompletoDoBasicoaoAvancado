@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{152E8461-DDD4-47DA-8B52-092A612442EF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CursoCSharp</RootNamespace>
+    <AssemblyName>CursoCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anotacoes\Anotacoes.cs" />
+    <Compile Include="Anotacoes\Pilares OO.cs" />
+    <Compile Include="Api\ExDateTime.cs" />
+    <Compile Include="Api\ExDirectoryInfo.cs" />
+    <Compile Include="Api\ExDiretorio.cs" />
+    <Compile Include="Api\ExFileInfo.cs" />
+    <Compile Include="Api\ExPath.cs" />
+    <Compile Include="Api\ExTimeSpan.cs" />
+    <Compile Include="Api\LendoArquivos.cs" />
+    <Compile Include="Api\PrimeiroArquivo.cs" />
+    <Compile Include="ClasseEMetodo\AtribustosEstaticos.cs" />
+    <Compile Include="ClasseEMetodo\CalculadoraComum.cs" />
+    <Compile Include="ClasseEMetodo\Construtores.cs" />
+    <Compile Include="ClasseEMetodo\Enum.cs" />
+    <Compile Include="ClasseEMetodo\Membros.cs" />
+    <Compile Include="ClasseEMetodo\MetodosEstaticos.cs" />
+    <Compile Include="ClasseEMetodo\ParametroPadrao.cs" />
+    <Compile Include="ClasseEMetodo\ParametrosNomeados.cs" />
+    <Compile Include="ClasseEMetodo\Params.cs" />
+    <Compile Include="ClasseEMetodo\Pessoa.cs" />
+    <Compile Include="ClasseEMetodo\Props.cs" />
+    <Compile Include="ClasseEMetodo\ReadOnly.cs" />
+    <Compile Include="ClasseEMetodo\StructExemplo.cs" />
+    <Compile Include="Colecoes\ArrayExemplo.cs" />
+    <Compile Include="Colecoes\ArrayListExemplo.cs" />
+    <Compile Include="Colecoes\DictionaryExemplo.cs" />
+    <Compile Include="Colecoes\IgualadeExemplo.cs" />
+    <Compile Include="Colecoes\IgualdadeExemplo.cs" />
+    <Compile Include="Colecoes\ListExemplo.cs" />
+    <Compile Include="Colecoes\QueueExemplo.cs" />
+    <Compile Include="Colecoes\StackExemplo.cs" />
+    <Compile Include="Estruturas_de_controle\EstruturaDoFor.cs" />
+    <Compile Include="Estruturas_de_controle\EstruturaDoFOREACH.cs" />
+    <Compile Include="Estruturas_de_controle\EstruturaDoWhile.cs" />
+    <Compile Include="Estruturas_de_controle\EstruturaIfEElse.cs" />
+    <Compile Include="Estruturas_de_controle\EstruturaSwitch.cs" />
+    <Compile Include="Estruturas_de_controle\EstruturaWhile.cs" />
+    <Compile Include="Estruturas_de_controle\UsandoBreak.cs" />
+    <Compile Include="Estruturas_de_controle\UsandoContinue.cs" />
+    <Compile Include="Excecoes\ExcecoesPersonalizadas.cs" />
+    <Compile Include="Excecoes\PrimeiraExcecao.cs" />
+    <Compile Include="Fundamentos\CasaDescimal.cs" />
+    <Compile Include="Fundamentos\Conversoes.cs" />
+    <Compile Include="Fundamentos\InterpolcaoStrings.cs" />
+    <Compile Include="Fundamentos\NotacaoPonto.cs" />
+    <Compile Include="Fundamentos\OperadoresDeAtribuicao.cs" />
+    <Compile Include="Fundamentos\OperadoresLogicos.cs" />
+    <Compile Include="Fundamentos\OperadoresTernarios.cs" />
+    <Compile Include="MetodosEFuncoes\ExLambda.cs" />
+    <Compile Include="MetodosEFuncoes\ExLambdaEDelegate.cs" />
+    <Compile Include="MetodosEFuncoes\UsandoDelegate.cs" />
+    <Compile Include="OrientacaoObj\ClasseAbstrata.cs" />
+    <Compile Include="OrientacaoObj\ConstrutorThis.cs" />
+    <Compile Include="OrientacaoObj\Encapsulamento.cs" />
+    <Compile Include="OrientacaoObj\HerancaOO.cs" />
+    <Compile Include="OrientacaoObj\Interface.cs" />
+    <Compile Include="OrientacaoObj\Polimorfismo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TopicosAvancados\LINQ1.cs" />
+    <Compile Include="TopicosAvancados\LINQ2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
